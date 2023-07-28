@@ -1,0 +1,73 @@
+body {
+    font-family: 'Public Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px;
+}
+
+.logo-marca {
+    display: flex;
+    align-items: center;
+}
+
+.logo-marca h1 {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 400;
+    gap: 30px;
+}
+
+.menu li a:hover{
+    background-color: #5BC241;
+    color: #FFF;
+    padding: 10px 5px;
+}
+
+a.botao {
+    background-color: #5BC241;
+    color: #FFF;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 10px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media (max-width:690px) {
+    header{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .logo-marca h1 {
+        font-size: 40px;
+    }
+
+    .menu{
+        flex-direction: column;
+        gap: 30px;
+        font-size: 40px;
+    }
+
+    .menu li a:hover{
+        padding: 17px 38px;
+    }
+    
+    a.botao {
+        font-size: 18px;
+    }
+}
+
+
+
+
